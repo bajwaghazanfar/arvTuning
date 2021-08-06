@@ -1,0 +1,39 @@
+.exploreContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 3rem;
+}
+.leftGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.leftGrid h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--imgTextH1-color);
+    position: relative;
+    opacity: 0;
+    top:100px;
+}
+.rightGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.link{
+    position: relative;
+    opacity: 0;
+    top: 100px;
+}
+.link button{
+    width: 400px;
+    padding: 1rem;
+    border-bottom: 1px solid #DBDCDC ;
+}

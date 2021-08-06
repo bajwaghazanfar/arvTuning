@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --footerBG-color:#2d3691;
+    --IncosolataFont:'Inconsolata', monospace;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+    color: white;
+}
+.leftGrid{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rightGrid{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.rightGrid h2{
+    font-family: var(--IncosolataFont);
+    letter-spacing: 2px;
+}

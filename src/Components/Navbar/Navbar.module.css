@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --IncosolataFont:'Inconsolata', monospace;
+}
+
+
+.container{
+    color: white;
+    background-color: black;
+    width: 100vw;
+
+
+}
+.wrapper{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 30;
+    background-color: black;
+
+}
+.wrapper a{
+    color:  white ;
+    text-decoration: none;
+}
+.wrapper h2{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 30px; 
+    color:  white ;
+}
+.wrapper img{
+    margin-left: 70px;
+    width: 200px;
+    filter: brightness(0) invert(1);
+}
+.links ul{
+    display: flex;
+    gap: 30px;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li h3{
+    font-family: var(--IncosolataFont);
+    font-weight: 400;
+    color: white;
+}
+.hamburgerMenu{
+    visibility: hidden;
+    opacity: 0;
+}
+@media screen and (max-width:430px){
+    .links{
+        display: none;
+    }
+    .hamburgerMenu{
+        visibility: visible;
+        opacity: 1;
+    }
+}

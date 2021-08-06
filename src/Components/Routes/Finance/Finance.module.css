@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+
+    --inputFieldBorderColour:#D7D7D7;
+    --IncosolataFont:'Inconsolata', monospace;
+    --inputFieldHeaderSize:1rem;
+    --inputFieldHeaderColour:#6c6c6c;
+    --financeFormHeaderColour:#2d3691;
+
+    --mobileLarge:425px;
+    --tablet:768px;
+    --laptop:1024px;
+    --laptopL:1440px;
+    --screenLarge4k:2560px;
+  
+
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+ 
+
+}
+/*For LandingPage Image(contains header our services with vertical text positioned to the left of the image */
+.landingPageWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 80%;
+}
+.headingWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headingWrapper h1{
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--IncosolataFont);
+    letter-spacing: 10px;
+}
+.imageContainer{
+    
+    width: 1440px;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.imageContainer img{
+    width: 1440px;
+    height: 750px;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(2);
+}
+.imageContainerAfter{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: white;
+}
+/*End of landingpage CSS*/
+/*Start of introText  CSS*/
+
+.introTextWrapper{
+    width: 100%;
+    height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introText{
+    text-align: center;
+}
+.introText h1{
+    font-size: 5rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    opacity: 0;
+    top: -40px;
+}
+/*End of IntroText css*/
+/*Start of FinanceForm CSS */
+.financeFormContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA  ;
+    
+
+}
+.financeFormWrapper{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    width: 80%;
+  
+}
+.financeFormHeader{
+    width: 80%;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.financeFormHeader h1{
+    font-size: 3rem;
+    color: var(--financeFormHeaderColour);
+}
+.financeFormHeader h3{
+    margin-bottom: 10px;
+    color: #171717;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--IncosolataFont);
+}
+.financeForm{
+    width: 100%;
+    position: relative;
+    left: -50px;
+    opacity: 0;
+}
+.financeFormImage{
+      
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.financeFormImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(2);
+}
+.financeFormImageAfter{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #FAFAFA ;
+}
+.financeForm form{
+    width: 100%;
+}
+.inputField{
+
+    width: 100%;
+}
+.financeForm form h1{
+    font-family: var(--IncosolataFont);
+    letter-spacing: 2px;
+    font-size: var(--inputFieldHeaderSize);
+    color: var(--inputFieldHeaderColour);
+    padding: .5rem;
+}
+.financeForm form input{
+    background: none;
+    border: 1px solid #757575 ;
+    outline: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    border-radius: 5px; 
+}
+.financeForm form input::placeholder{
+    font-weight: 700;
+    color: #9C9C9C   ;
+    letter-spacing: 2px;
+    font-family: var(--IncosolataFont);
+    padding: 1rem;
+}
+.financeForm form select{
+    background: none;
+    border: 1px solid #757575 ;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #9C9C9C   ;
+    letter-spacing: 2px;
+    font-family: var(--IncosolataFont);
+}
+.financeForm form select option{
+    font-size: 1rem;
+    height: auto;
+    font-family: var(--IncosolataFont);
+    font-weight: 600;
+}
+
+
+.buttonWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  
+}
+.buttonWrapper button{
+    border-radius: 0px;
+    border-bottom: 1px solid var(--financeFormHeaderColour);
+
+}
+.buttonWrapper button h3{
+    font-family: var(--IncosolataFont);
+}
+/*END OF FINANCE FORM CSS*/
+/*EXPLORE CONTAINER*/
+.exploreContainer{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 3rem;
+}
+.leftGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.leftGrid h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--imgTextH1-color);
+    position: relative;
+    opacity: 0;
+    top:100px;
+}
+.rightGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.link{
+    position: relative;
+    opacity: 0;
+    top: 100px;
+}
+.link button{
+    width: 400px;
+    padding: 1rem;
+    border-bottom: 1px solid #DBDCDC ;
+}
+/*MEDIA QUERY FOR MAX-WIDTH OF TABLETS:768PX */
+@media screen and (max-width:768px){
+    /*Landing Page CSS*/
+    .landingPageWrapper{
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    .imageContainer{
+    
+        width:100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .imageContainer img{
+        width:100%;
+        height: 100%;
+    }
+    .introText h1{
+        font-size: var(--introText-Mobile);
+    }
+   
+    /*Finance Form CSS*/
+    .financeFormWrapper{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        grid-template-columns: none;
+    }
+    .financeForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .inputField{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .financeFormImage{
+      
+        width: 100%;
+        height: 300px;
+      
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .financeFormImage img{
+        width: 100%;
+        height: 300px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .financeFormImageAfter{
+        width: 100%;
+        height: 100%;
+    }
+    .financeForm form input{
+        width: 80%;
+    }
+    .buttonWrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+   
+  
+   
+    .exploreContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*MEDIA QUERY FOR MAX-WIDTH OF LAPTOP SMALL:1024PX */
+@media screen and (max-width:1024px){
+    /*Landing Page CSS*/
+    .landingPageWrapper{
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    .imageContainer{
+    
+        width:100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .imageContainer img{
+        width:100%;
+        height: 100%;
+    }
+    .introText h1{
+        font-size: var(--introText-Mobile);
+    }
+    .financeFormImage{
+      
+        width:100%;
+        height: 90%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .financeFormImage img{
+        width:100%;
+        height: 100%;;
+        object-fit: cover;
+        position: absolute;
+        transform: scale(2);
+    }
+   
+}
+
+/*MEDIA QUERY FOR MAX-WIDTH OF LAPTOP LARGE:1440PX */
+@media screen and (max-width:1440px){
+    /*Landing Page CSS*/
+    .landingPageWrapper{
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    .imageContainer{
+    
+        width:90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        border-radius: 10px;
+    }
+    .imageContainer img{
+        width:100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+   
+}
+/*MEDIA QUERY FOR MAX-WIDTH OF LARGE SCREEN 4K:2560PX */
+@media screen and (width:2560px){
+    /*Landing Page CSS*/
+    .imageContainer{
+    
+        width:90%;
+        height: 90%;
+ 
+    }
+    .imageContainer img{
+        width:100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .headingWrapper h1{
+        text-orientation: mixed;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 60px;
+        font-weight: 500;
+        font-family: var(--IncosolataFont);
+        letter-spacing: 10px;
+    }
+    .introText h1{
+        font-size: 8rem;  
+    }
+    /*Start of FinanceForm CSS */
+.financeFormHeader h1{
+    font-size: 6rem;
+    color: var(--financeFormHeaderColour);
+}
+.financeFormHeader h3{
+    margin-bottom: 10px;
+    color: #171717;
+    font-size: 2rem;
+    line-height: 24px;
+    font-family: var(--IncosolataFont);
+}
+.financeFormImage{
+      
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.financeForm form{
+    width: 100%;
+}
+.financeForm form h1{
+    font-family: var(--IncosolataFont);
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: var(--inputFieldHeaderColour);
+    padding: .5rem;
+    font-weight: 600;
+}
+.financeForm form input{
+    background: none;
+    border: 1px solid #757575 ;
+    outline: none;
+    padding-top:1.5rem;
+    padding-bottom:1.5rem;
+    width: 100%;
+    border-radius: 5px; 
+}
+.financeForm form input::placeholder{
+    font-weight: 700;
+    color: #9C9C9C   ;
+    letter-spacing: 2px;
+    font-family: var(--IncosolataFont);
+    font-size: 1.5rem;
+}
+.financeForm form select::placeholder{
+    font-size: 2rem;
+}
+
+
+.buttonWrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+  
+}
+.buttonWrapper button{
+    border-radius: 0px;
+    border-bottom: 1px solid var(--financeFormHeaderColour);
+
+}
+.buttonWrapper button h3{
+    font-family: var(--IncosolataFont);
+    font-size: 2rem;
+}
+/*END OF FINANCE FORM CSS*/
+   
+}

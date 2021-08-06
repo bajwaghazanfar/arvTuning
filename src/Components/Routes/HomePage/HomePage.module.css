@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --introText-size:3rem;
+    --imgTextH1-size:2rem;
+    --imgTextP-size:16px;
+    
+    --introText-Small:1.3rem;
+    --imgTextH1-Small:1rem;
+    --imgTextP-Small:1px;  
+
+    --imgTextH1-color:#2d3691;
+    --imgTextP-color:#6c6c6c;;
+    --h3-size:1.3rem;
+    --IncosolataFont:'Inconsolata', monospace;
+    --vehicleWrapperBGColor:#F4F6F7 
+
+    
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+}
+.videoBackgroundWrapper{
+    position: relative;
+    overflow: hidden;
+}
+.videoBackgroundWrapper video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 2;
+}
+.introText{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.introTextWrapper{
+
+    position: relative;
+    overflow: hidden;
+
+}
+.introText h1{
+    font-size: var(--introText-size);
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    font-family: var(--IncosolataFont);  
+    opacity: 0;
+    font-weight: 300;
+}
+.scrollToInformationWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.informationWrapper{
+    width: 100%;
+    height: auto;
+    
+}
+
+.information{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+.information:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
+.imgText{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+.imgText h1{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: var(--imgTextH1-size);
+    color: var(--imgTextH1-color);
+    position: relative;
+    left: -30px;
+    opacity: 0;
+    font-family: 'Inconsolata', monospace;
+}
+.imgText p{
+    text-align: left;
+    font-size: var(--imgTextP-size);
+    color: var(--imgTextP-color);
+    line-height: 30px;
+    font-weight: 500;
+    position: relative;
+    left: -30px;
+    opacity: 0;
+    
+}
+.imageContainer{
+    background-image: url("https://wallpaperaccess.com/full/1940625.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: cameraPan 10s infinite;
+    transition: all .2s ease-in;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    position: relative;
+    left: -100px;
+    overflow: hidden;
+    transform: scale(1);
+   
+}
+.videoContainer{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 100px;
+    opacity: 0;
+}
+    
+.videoContainer video{
+   width: 500px;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   
+}
+.redirect{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.redirectHeading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.redirectHeading h1{
+    text-align:center;
+    font-size: var(--imgTextP-size);
+    color: var(--imgTextP-color);
+    font-weight: 300;
+    font-family: 'Inconsolata', monospace;
+}
+
+.companyContainer{
+    width: 100%;
+    height: auto;
+    background-color: var(--vehicleWrapperBGColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.companyWrapper h1{
+    font-size: 5rem;
+    font-family: var(--IncosolataFont);
+    font-weight: 300;
+    color: var(--imgTextH1-color);
+}
+.companyInfo{
+    position: relative;
+    left: -100px;
+    opacity: 0;
+}
+.vehicleWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+}
+.vehicle{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   cursor: pointer;
+   position: relative;
+    left: -50px;
+    opacity: 0;
+}
+.vehicleDescription{
+    width: 300px;
+}
+
+.vehicle p{
+    text-align: left;
+    font-size: var(--imgTextP-size);
+    color: var(--imgTextP-color);
+    line-height: 30px;
+    font-weight: 500;
+}
+.vehicle h2{
+    font-family: var(--IncosolataFont);
+    font-size: 2rem;
+    width: 30px;
+    color: var(--imgTextH1-color);
+    
+}
+
+/*EXPLORE CONTAINER*/
+.exploreContainer{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 3rem;
+}
+.leftGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.leftGrid h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--imgTextH1-color);
+    position: relative;
+    opacity: 0;
+    top:100px;
+}
+.rightGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.link{
+    position: relative;
+    opacity: 0;
+    top: 100px;
+}
+.link button{
+    width: 400px;
+    padding: 1rem;
+    border-bottom: 1px solid #DBDCDC ;
+}
+@keyframes cameraPan{
+    0%{
+        background-position: 0% 0;
+    }
+    25%{
+        background-position: 40% 10%;
+    }
+    50%{
+        background-position: 0% 100%;
+    }
+    75%{
+        background-position: 10% 40%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+  }
+
+  @media screen and (max-width:430px){
+    .introText{
+        margin: 0 auto;
+    }
+    .introText h1{
+        font-size: var(--introText-Small);
+        text-align: center;
+    }
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+    .information:nth-child(2){
+        display: flex;
+        flex-direction: column;
+    }
+    .videoContainer{
+        width: 100%;
+    }
+    .videoContainer video{
+        width: 100%;
+    }
+    .imageContainer{
+        width: 100%;
+    }
+    .imgText{
+        width: 100%;
+
+    }
+    .imgText h1{
+        text-align: center;
+    }
+    .imgText p{
+        text-align: center;
+    }
+    .vehicleWrapper{
+        flex-direction: column;
+        
+    }
+    .vehicle{
+        text-align: center;
+    }
+    .vehicle h2{
+        text-align: center;
+    }
+    .vehicle p{
+        text-align: center;
+    }
+    .exploreContainer{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  

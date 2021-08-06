@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --OurWorkH1-size:3rem;
+    
+    --introText-Small:1.3rem;
+    --imgTextH1-Small:1rem;
+    --imgTextP-Small:1px;  
+
+    --introText-Mobile:4rem;
+
+    --h1-color:#2d3691;
+    --p-color:#6c6c6c;;
+    --h3-size:1.3rem;
+    --IncosolataFont:'Inconsolata', monospace;
+    --vehicleWrapperBGColor:#F4F6F7 
+
+    
+}
+/*For LandingPage Image(contains header our services with vertical text positioned to the left of the image */
+.container{
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+}
+.landingPageWrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 80%;
+}
+.headingWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.headingWrapper h1{
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--IncosolataFont);
+    letter-spacing: 10px;
+}
+.imageContainer{
+    
+    width: 1440px;
+    height: 750px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.imageContainer img{
+    width: 1440px;
+    height: 750px;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(2);
+}
+.imageContainerAfter{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: white;
+}
+/*End of landingpage CSS*/
+/*Start of introText  CSS*/
+.introTextWrapper{
+    width: 100%;
+    height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introText{
+    text-align: center;
+}
+.introText h1{
+    font-size: 5rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    opacity: 0;
+    top: -40px;
+}
+/*END OF INTROTEXT CSS */
+/*START OF ALLWORK  CSS */
+.allWorkContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    background-color: #FAFAFA  ;
+}
+.allWorkWrapper{
+    width: 100%;
+    height: auto;
+}
+.work{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+.work:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+    left: -100px;
+}
+.workText{
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+.workText h1{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: var(--imgTextH1-size);
+    color: var(--imgTextH1-color);
+    position: relative;
+    left: -30px;
+    font-family: 'Inconsolata', monospace;
+}
+.workText p{
+    text-align: left;
+    font-size: var(--imgTextP-size);
+    color: var(--imgTextP-color);
+    line-height: 30px;
+    font-weight: 500;
+    position: relative;
+    left: -30px;
+   
+}
+.workImageContainer{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.workImageContainer img{
+    width: 600px;
+    height: 500px;
+    border-radius: 5px;
+
+    position: absolute;
+    transform: scale(2);
+}
+.workImageContainerAfter{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #FAFAFA ;
+}
+.workImageContainer img{
+    width: 550px;
+    object-fit: cover;
+    height: 500px;
+}
+/*END OF ALLWORK  CSS */
+/*START OF EXPLOREMORE   CSS */
+.exploreContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 3rem;
+}
+.leftGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.leftGrid h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--imgTextH1-color);
+    position: relative;
+    opacity: 0;
+    top:100px;
+}
+.rightGrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.link{
+    position: relative;
+    opacity: 0;
+    top: 100px;
+}
+.link button{
+    width: 400px;
+    padding: 1rem;
+    border-bottom: 1px solid #DBDCDC ;
+}
+/*END OF ALLWORK  CSS */
+/*FOR MOBILE MAX WIDTH 430PX*/
+@media screen and (max-width:430px){
+    .landingPageWrapper{
+        display: grid;
+        grid-template-columns: 10% 90%;
+    }
+    .imageContainer{
+    
+        width:350px;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .imageContainer img{
+        width:425px;
+        height: 100%;
+    }
+    .introText h1{
+        font-size: var(--introText-Mobile);
+    }
+    .allWorkContainer{
+        display: grid;
+        grid-template-columns: none;
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .workText{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .workText h1{
+        text-align: center;
+        left: 0px;
+    }
+    .workText p{
+        text-align: center;
+        left: 0px;
+    }
+    .work:nth-child(2){
+        display: flex;
+        flex-direction: column; 
+        position: relative;
+        left: 0px;
+    }
+    .workImageContainer{
+        width: 100%;
+    }
+    .workImageContainer img{
+        width: 100%;
+        position: relative;
+        left: 0px;
+        
+    }
+    .exploreContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
