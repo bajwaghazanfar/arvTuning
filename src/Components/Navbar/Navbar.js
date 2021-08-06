@@ -11,16 +11,15 @@ const Navbar = () =>{
     return(
         <div className={styles.container}>
             <div className={styles.wrapper}>
-                <img src={logo}/>
+               <a href="/"><img src={logo}/></a>
                 <div className={styles.hamburgerMenu}>
-                 <Hamburger toggled={isOpen} toggle={setOpen}/>
+                 <Hamburger toggled={isOpen} toggle={setOpen} size={22}/>
                 </div>
                 <div className={styles.links}>
                     <ul>
-                        <li><h3>Work</h3></li>
-                        <li><h3>Services</h3></li>
-                        <li><h3>Contact</h3></li>
-                        <li><h3>Finance</h3></li>
+                        <a href="/work"><li><h3>Work</h3></li></a>
+                        <a href="/services"><li><h3>Services</h3></li></a>
+                        <a href="/contactUs"><li><h3>Contact Us</h3></li></a>
                     </ul>
                 </div>
             </div>

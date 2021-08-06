@@ -82,7 +82,8 @@ const Services = () =>{
             <div className={styles.allServicesContainer} ref={allServicesContainer}>
                 <div></div>
                 <div className={styles.allServicesWrapper}>
-                        <div className={styles.services}  ref={service1} onClick={()=>{history.push('/finance')}}>
+                    <a href="/finance">
+                        <div className={styles.services}  ref={service1}>
                             <div className={styles.servicesImageContainer} >
                               <img src={finance}  ref={ serviceimage1}/>
                               <div className={styles.imageOverlay} ref={imageOverlay} onMouseEnter={()=>{onHoverImageOverlay(serviceimage1)}} onMouseLeave={()=>{onHoverImageOverlayLeave(serviceimage1)}}>
@@ -93,7 +94,7 @@ const Services = () =>{
                                 </div>
                             </div> 
                         </div>
-
+                    </a>
                         <div className={styles.services} ref={service2}onClick={()=>{history.push('/remapping')}}>
                             <div className={styles.servicesImageContainer} >
                               <img src={remapping}  ref={ serviceimage3}/>

@@ -6,6 +6,7 @@ import Work from "./Components/Routes/Work/Work";
 import Services from "./Components/Routes/Services/Services";
 import FinancePage from "./Components/Routes/Finance/Finance";
 import RemappingPage from "./Components/Routes/Remapping/Remapping";
+import ContactUs from "./Components/Routes/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route component={Services} path="/services"/>
       <Route component={FinancePage} path="/finance"/>
       <Route component={RemappingPage} path="/remapping"/>
+      <Route component={ContactUs} path="/contactUs"/>
     </Switch>
 </>
   );

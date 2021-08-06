@@ -32,3 +32,9 @@
     font-family: var(--IncosolataFont);
     letter-spacing: 2px;
 }
+@media screen and (max-width:430px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

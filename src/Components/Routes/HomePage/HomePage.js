@@ -8,7 +8,7 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import gtr from './assets/gtr.mp4'
 import {Button} from '@material-ui/core'
 import Footer from '../../Footer/Footer';
-import { useHistory } from 'react-router-dom';
+import { useHistory,Redirect } from 'react-router-dom';
 import * as Scroll from 'react-scroll';
 
 const HomePage = () =>{
@@ -106,7 +106,7 @@ const HomePage = () =>{
                     <br/>
                     At ARV Tuning we do it all. We offer various remaps at affordable prices and of-course at the highest standard ;)
                     <br/>
-                    Click here to find out more.
+                    Click <a href="/remapping">here</a> to find out more.
                     </p>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ const HomePage = () =>{
     
             <div className={styles.redirect}>
                 <div className={styles.redirectHeading}>
-                    <h1>Explore Our Services</h1>
+                    <a href="/services"><h1>Explore Our Services</h1></a>
                     <ArrowForwardIcon style={{color:'#6c6c6c'}}/>
                 </div> 
             </div>
@@ -171,14 +171,15 @@ const HomePage = () =>{
                 <div className={styles.rightGrid}>
                     <div className={styles.rightGridWrapper} ref={exploreLinks}>
                         <div className={styles.link}>
-                            <Button onClick={()=>{history.push('/services')}}><h2>Our Services</h2></Button>
+                          <a href="/services">  <Button ><h2>Our Services</h2></Button></a>
                         </div>
 
                         <div className={styles.link}>
-                            <Button onClick={()=>{history.push('/work')}}><h2>Our Work</h2></Button>
+                          <a href="/work">  <Button ><h2>Our Work</h2></Button></a>
                         </div>
+
                         <div className={styles.link}>
-                            <Button onClick={()=>{history.push('/contactUs')}}><h2>Contact Us</h2></Button>
+                          <a href="/contactUs">  <Button ><h2>Contact Us</h2></Button></a>
                         </div>
                     </div>
                 </div>

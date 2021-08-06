@@ -266,6 +266,9 @@
     opacity: 0;
     top: 100px;
 }
+.link a{
+    text-decoration: none;
+}
 .link button{
     width: 400px;
     padding: 1rem;

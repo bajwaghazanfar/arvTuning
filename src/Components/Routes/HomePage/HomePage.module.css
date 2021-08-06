@@ -182,6 +182,10 @@
     color: var(--imgTextP-color);
     font-weight: 300;
     font-family: 'Inconsolata', monospace;
+    cursor: pointer;
+}
+.redirectHeading a{
+    text-decoration: none;
 }
 
 .companyContainer{
@@ -277,6 +281,9 @@
     opacity: 0;
     top: 100px;
 }
+.link a{
+    text-decoration: none;
+}
 .link button{
     width: 400px;
     padding: 1rem;
@@ -300,7 +307,7 @@
     }
   }
 
-  @media screen and (max-width:430px){
+  @media screen and (max-width:800px){
     .introText{
         margin: 0 auto;
     }
@@ -341,11 +348,17 @@
     }
     .vehicle{
         text-align: center;
+        margin-bottom: 10px;
     }
     .vehicle h2{
         text-align: center;
+        width: 100%;
     }
-    .vehicle p{
+    .vehicleDescription{
+        width: 100%;
+        text-align: center;
+    }
+    .vehicleDescription p{
         text-align: center;
     }
     .exploreContainer{
