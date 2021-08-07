@@ -138,7 +138,8 @@
     object-fit: cover;
     border-radius: 5px;
     position: relative;
-    left: -100px;
+    left: -40px;
+    opacity: 0;
     overflow: hidden;
     transform: scale(1);
    
@@ -150,7 +151,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: 100px;
+    left: 20px;
     opacity: 0;
 }
     
@@ -205,6 +206,12 @@
     font-family: var(--IncosolataFont);
     font-weight: 300;
     color: var(--imgTextH1-color);
+}
+.companyWrapper h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--IncosolataFont);
+    padding-top: 1rem;
 }
 .companyInfo{
     position: relative;
@@ -307,7 +314,7 @@
     }
   }
 
-  @media screen and (max-width:800px){
+  @media screen and (max-width:430px){
     .introText{
         margin: 0 auto;
     }

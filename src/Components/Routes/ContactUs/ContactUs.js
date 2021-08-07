@@ -157,10 +157,6 @@ const ContactUs = () =>{
                         <div className={styles.link}>
                           <a href="/remapping">  <Button ><h2>Remapping</h2></Button></a>
                         </div>
-
-                        <div className={styles.link}>
-                          <a href="/contactUs">  <Button ><h2>Contact Us</h2></Button></a>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -28,9 +28,17 @@
     align-items: center;
     text-align: center;
 }
+.contact{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 .rightGrid h2{
     font-family: var(--IncosolataFont);
     letter-spacing: 2px;
+    font-weight: 600;
 }
 @media screen and (max-width:430px){
     .container{

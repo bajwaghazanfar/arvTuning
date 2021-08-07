@@ -156,15 +156,17 @@ const Work = () =>{
                     </div>
                     <div className={styles.rightGrid}>
                         <div className={styles.rightGridWrapper} ref={exploreLinks}>
-                            <div className={styles.link}>
-                                <Button onClick={()=>{history.push('/services')}}><h2>Our Services</h2></Button>
-                            </div>
-                            <div className={styles.link}>
-                                <Button onClick={()=>{history.push('/finance')}}><h2>Financing</h2></Button>
-                            </div>
-                            <div className={styles.link}>
-                                <Button onClick={()=>{history.push('/contactUs')}}><h2>Contact Us</h2></Button>
-                            </div>
+                        <div className={styles.link}>
+                          <a href="/services">  <Button ><h2>Our Services</h2></Button></a>
+                        </div>
+
+                        <div className={styles.link}>
+                          <a href="/finance">  <Button ><h2>Financing</h2></Button></a>
+                        </div>
+
+                        <div className={styles.link}>
+                          <a href="/contactUs">  <Button ><h2>Contact Us</h2></Button></a>
+                        </div>
                         </div>
                     </div>
                 </div>

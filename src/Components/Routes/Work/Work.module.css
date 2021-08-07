@@ -214,6 +214,9 @@
     opacity: 0;
     top: 100px;
 }
+.link a{
+    text-decoration: none;
+}
 .link button{
     width: 400px;
     padding: 1rem;
@@ -234,7 +237,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 50px;
     }
     .imageContainer img{
         width:425px;

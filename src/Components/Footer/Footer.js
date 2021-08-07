@@ -2,6 +2,8 @@ import styles from './Footer.module.css'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import { Button } from '@material-ui/core';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import PhoneIcon from '@material-ui/icons/Phone';
 const Footer = () =>{
 
     return(
@@ -14,8 +16,8 @@ const Footer = () =>{
                 <p>© Copyright 2021 ARV TUNING. All Rights</p>
             </div>
             <div className={styles.rightGrid}>
-                <h2>Email:Ammar@gmail.com</h2>
-                <h2>07348764334</h2>
+               <div className={styles.contact}> <MailOutlineIcon/><h2>Ammar@gmail.com</h2></div>
+               <div className={styles.contact}> <PhoneIcon/><h2>073428068885</h2></div>
             </div>
         </div>
     )
