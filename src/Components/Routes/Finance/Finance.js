@@ -77,7 +77,7 @@ const FinancePage = () =>{
      <LoadingPage/>
         <div className={styles.container} ref={container}>
              <div className={styles.landingPageWrapper} >
-                <div className={styles.headingWrapper}><h1>Finance a Car.</h1></div>
+                <div className={styles.headingWrapper}><h1>Finance a Car</h1></div>
                 <div className={styles.imageContainer}>
                     <img src={audi} ref={image}/>
                     <div className={styles.imageContainerAfter} ref={imageReveal}/>

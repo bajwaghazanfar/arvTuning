@@ -122,7 +122,7 @@ export const introTextAnimation = (introTextWrapper) =>{
         duration:.5,
         ease:'power3.easeInOut',
         stagger:{
-            amount:3
+            amount:1
         }
     })
 }

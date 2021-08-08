@@ -23,7 +23,7 @@ const Services = () =>{
 
       //INTRO TEXT REFS AND VARIABLES TO SEPERATE THE H1 TAGS
         const introTextWrapper = useRef(null)
-        var introText   = "Remapping Financing Tuning "
+        var introText   = "Remapping Financing "
         var introTextArray = introText.split(/[ ,]+/)
 
          //FOR WORK IMAGE CONTAINER ANIMATION 
@@ -48,7 +48,6 @@ const Services = () =>{
      
 
      useEffect(()=>{
-         scroll.scrollToTop()
         gsap.to(container.current,{delay:3,css:{opacity:1}})
         imageRevealAnimation(image,imageReveal)
         introTextAnimation(introTextWrapper)
@@ -80,7 +79,7 @@ const Services = () =>{
             </div>
 
             <div className={styles.allServicesContainer} ref={allServicesContainer}>
-                <div></div>
+                <div className={styles.emptyDiv}></div>
                 <div className={styles.allServicesWrapper}>
                     <a href="/finance">
                         <div className={styles.services}  ref={service1}>
@@ -95,7 +94,8 @@ const Services = () =>{
                             </div> 
                         </div>
                     </a>
-                        <div className={styles.services} ref={service2}onClick={()=>{history.push('/remapping')}}>
+                    <a href="/remapping">
+                        <div className={styles.services} ref={service2}>
                             <div className={styles.servicesImageContainer} >
                               <img src={remapping}  ref={ serviceimage3}/>
                               <div className={styles.imageOverlay} onMouseEnter={()=>{onHoverImageOverlay(serviceimage3)}} onMouseLeave={()=>{onHoverImageOverlayLeave(serviceimage3)}}>
@@ -106,8 +106,10 @@ const Services = () =>{
                                 </div>
                             </div> 
                         </div>
+                    </a>
 
-                        <div className={styles.services} ref={service3} onClick={()=>{history.push('/mobileRemapping')}}>
+                    <a href="/remapping">
+                        <div className={styles.services} ref={service3}>
                             <div className={styles.servicesImageContainer} >
                               <img src={mobileRemapping}  ref={ serviceimage4}/>
                               <div className={styles.imageOverlay} onMouseEnter={()=>{onHoverImageOverlay(serviceimage4)}} onMouseLeave={()=>{onHoverImageOverlayLeave(serviceimage4)}}>
@@ -118,6 +120,8 @@ const Services = () =>{
                                 </div>
                             </div> 
                         </div>
+                    </a>
+
                 </div>
             </div>
 

@@ -98,7 +98,7 @@ export const introTextAnimation = (introTextWrapper) =>{
         left:'0px',
         opacity:1,
         duration:.5,
-        delay:2,
+        delay:.5,
         ease:"power3.easeInOut",
 
     })

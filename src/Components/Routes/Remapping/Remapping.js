@@ -41,7 +41,7 @@ const RemappingPage = () =>{
     const exploreHeader = useRef(null)
     const exploreLinks = useRef(null)
     useEffect(()=>{
-        scroll.scrollToTop()
+
         gsap.to(container.current,{delay:3,css:{opacity:1}})
         introTextAnimation(introTextWrapper)
         imageRevealAnimation(image,imageReveal)
@@ -52,6 +52,7 @@ const RemappingPage = () =>{
     //ONSUBMIT FORM
     const onSumbit = (e) =>{
         e.preventDefault()
+        console.log(e.target)
 
         emailjs.sendForm('service_51ty0ft', 'template_byy43lf', e.target, 'user_RBE4vFmCZAy8E8cqQ1gZ1')
         .then((result) => {
@@ -72,7 +73,7 @@ const RemappingPage = () =>{
      <LoadingPage/>
         <div className={styles.container} ref={container}>
              <div className={styles.landingPageWrapper} >
-                <div className={styles.headingWrapper}><h1>Remapping.</h1></div>
+                <div className={styles.headingWrapper}><h1>Remapping</h1></div>
                 <div className={styles.imageContainer}>
                     <img src={blackAudi} ref={image}/>
                     <div className={styles.imageContainerAfter} ref={imageReveal}/>
@@ -138,7 +139,7 @@ const RemappingPage = () =>{
                                     </div>
                                     <div className={styles.inputField}>
                                         <h1>Date of appointment</h1>
-                                        <input autoComplete="none" required="true" name ="DateOfAppointment" type="date" placeholder="Select Date of Appointment"/>
+                                        <input autoComplete="none" required="true" name ="Date" type="date" placeholder="Select Date Of Appointment"/>
                                     </div>
                                     <div className={styles.inputField}>
                                         <h1>Time of Appointment</h1>

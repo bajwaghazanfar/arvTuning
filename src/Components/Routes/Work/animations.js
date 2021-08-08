@@ -14,7 +14,7 @@ export const imageRevealAnimation = (image,imageReveal,container) =>{
             },
             width:'0%',
             duration:1.5,
-            delay:1,
+            delay:.5,
             transition:'power2.easeInOut'
         })
         gsap.to(image.current,{

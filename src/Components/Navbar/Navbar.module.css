@@ -8,6 +8,7 @@
     color: white;
     background-color: black;
     width: 100%;
+    
 
 
 }
@@ -70,5 +71,16 @@
     .hamburgerMenu{
         visibility: visible;
         opacity: 1;
+    }
+}
+@media screen and (width:2560px){
+    .links ul li h3{
+      font-size: 30px;
+      margin-left: 50px;
+    }
+    .wrapper img{ 
+       
+        width: 300px;
+      
     }
 }
