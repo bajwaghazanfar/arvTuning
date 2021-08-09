@@ -230,18 +230,31 @@
 }
 /*FOR MOBILE WIDTH 320PX - 768PX*/
 @media only screen and (min-width: 0px) and (max-width: 768px){
+     /*Landing Page CSS*/
+     .landingPageWrapper{
+        display: grid;
+        grid-template-columns: 10% 90%;
+        
+    }
     .imageContainer{
-    
-        width:100%;
+
+        width:90%;
         height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-top: 30px;
+  
     }
     .imageContainer img{
         width:100%;
         height: 100%;
+        margin-top: 30px;
+        border-radius: 5px;
     }
     .introText h1{
-        font-size:50px;
+        font-size: 2rem;
     }
     .allServicesContainer{
         display: flex;

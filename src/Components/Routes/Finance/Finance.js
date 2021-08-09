@@ -45,7 +45,6 @@ const FinancePage = () =>{
     const exploreHeader = useRef(null)
     const exploreLinks = useRef(null)
     useEffect(()=>{
-        scroll.scrollToTop()
         gsap.to(container.current,{delay:3,css:{opacity:1}})
         introTextAnimation(introTextWrapper)
         imageRevealAnimation(image,imageReveal)

@@ -98,8 +98,8 @@ const HomePage = () =>{
                       <video src={gtr} muted={true} autoPlay={true} loop={true}/>
                     </div>
                     <div className={styles.imgText} >
-                    <h1 ref={heading2}  style={{left:'50px'}}>Remapping </h1>
-                    <p ref={description2} style={{left:'50px'}}>
+                    <h1 ref={heading2}  >Remapping </h1>
+                    <p ref={description2} >
                     Want your ECU tuned so you can squeeze all the extra power you can out of it?
                     <br/>
                     Desire some knarly anti-lag to keep your turbo spooling at all RPM's? Those Pops And Bangs are a serious head turner!

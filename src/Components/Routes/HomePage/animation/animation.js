@@ -32,6 +32,7 @@ export const serviceAnimation = (img,heading,description,information) =>{
 
         opacity:1,
         left:'0px',
+        visibility:'visible',
         duration:.5,
         ease:'power3.easeInOut',
         stagger:{

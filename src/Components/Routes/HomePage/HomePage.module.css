@@ -92,10 +92,20 @@
     align-items: center;
     gap: 30px;
     position: relative;
+    visibility: hidden;
 }
 .information:nth-child(2){
     display: flex;
     flex-direction: row-reverse;
+}
+.information:nth-child(2) h1{
+    position: relative;
+    left: 30px;
+   
+}
+.information:nth-child(2) p{
+    position: relative;
+    left: 30px;
 }
 .imgText{
     width: 400px;
@@ -313,8 +323,7 @@
         background-position: 0% 0%;
     }
   }
-
-  @media screen and (max-width:430px){
+  @media only screen and (min-width: 0px) and (max-width: 1000px){
     .introText{
         margin: 0 auto;
     }
@@ -371,6 +380,19 @@
     .exploreContainer{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        grid-template-columns: none;
+        padding: 0rem;
+        height: 50%;
+    }
+    .link{
+        width: 100%;
+    }
+    .link a{
+        text-decoration: none;
+    }
+    .link button{
+        width: 100%;
     }
   }
 
