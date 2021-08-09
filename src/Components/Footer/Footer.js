@@ -16,8 +16,8 @@ const Footer = () =>{
                 <p>© Copyright 2021 ARV TUNING. All Rights</p>
             </div>
             <div className={styles.rightGrid}>
-               <div className={styles.contact}> <MailOutlineIcon/><h2>Ammar@gmail.com</h2></div>
-               <div className={styles.contact}> <PhoneIcon/><h2>073428068885</h2></div>
+               <div className={styles.contact}> <MailOutlineIcon/><h2>arvtuningofficial@gmail.com</h2></div>
+               <div className={styles.contact}> <PhoneIcon/><h2>07938372058</h2></div>
             </div>
         </div>
     )
