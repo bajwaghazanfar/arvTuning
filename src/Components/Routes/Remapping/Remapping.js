@@ -170,14 +170,15 @@ const RemappingPage = () =>{
                 <div className={styles.rightGrid}>
                     <div className={styles.rightGridWrapper} ref={exploreLinks}>
                         <div className={styles.link}>
-                            <Button onClick={()=>{history.push('/services')}}><h2>Our Services</h2></Button>
+                          <a href="/services">  <Button ><h2>Our Services</h2></Button></a>
                         </div>
 
                         <div className={styles.link}>
-                            <Button onClick={()=>{history.push('/work')}}><h2>Our Work</h2></Button>
+                          <a href="/work">  <Button ><h2>Our Work</h2></Button></a>
                         </div>
+
                         <div className={styles.link}>
-                            <Button onClick={()=>{history.push('/contactUs')}}><h2>Contact Us</h2></Button>
+                          <a href="/contactUs">  <Button ><h2>Contact Us</h2></Button></a>
                         </div>
                     </div>
                 </div>

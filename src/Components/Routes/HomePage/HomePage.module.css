@@ -328,7 +328,7 @@
         margin: 0 auto;
     }
     .introText h1{
-        font-size: var(--introText-Small);
+        font-size: 30px;
         text-align: center;
     }
     .information{
@@ -395,5 +395,66 @@
         width: 100%;
     }
   }
-
-  
+/*MEDIA QUERY FOR MAX-WIDTH OF LARGE SCREEN 4K:2560PX */
+@media only screen and (min-width: 2000px) and (max-width: 3000px){
+    .introText{
+        margin: 0 auto;
+    }
+    .introText h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    .leftGrid h1{
+        font-size: 6rem;
+    }
+    /*Information Wrapper */
+    .imgText{
+        width: 600px;
+        height: 500px;
+    }   
+    .imgText h1{
+        font-size: 50px;
+    }
+    .imgText p{
+      font-size: 25px;
+      line-height: 40px;
+    }
+    .redirectHeading h1{
+        font-size: 30px;
+    }
+    /* Company Wrapper */
+    .companyWrapper h1{
+        font-size: 6rem;
+     
+    }
+    .companyWrapper h2{
+        font-size: 2rem;
+    }
+    .vehicleDescription{
+        width: 500px;
+    }
+    .vehicle p{
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .vehicle h2{
+        font-size: 3rem;        
+    }
+    /* Explore Container */
+    
+    .link{
+        position: relative;
+        opacity: 0;
+        top: 100px;
+    }
+    .link button{
+        width: 400px;
+        padding: 1rem;
+        border-bottom: 1px solid #DBDCDC ;
+    }
+    .link button h2{
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+   
+}
