@@ -31,7 +31,7 @@ export const imageRevealAnimation = (image,imageReveal,container) =>{
     }else{
         gsap.to(imageReveal.current,{
             width:'0%',
-            duration:1.5,
+            duration:2,
             delay:5,
             transition:'power2.easeInOut'
         })

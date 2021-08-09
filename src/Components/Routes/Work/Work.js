@@ -53,7 +53,7 @@ const Work = () =>{
  
 
     useEffect(()=>{
-        scroll.scrollToTop()
+
         gsap.to(container.current,{delay:3,css:{opacity:1}})
         imageRevealAnimation(image,imageReveal)
         introTextAnimation(introTextWrapper)
@@ -102,11 +102,8 @@ const Work = () =>{
                             <div className={styles.workText} >
                                 <h1 >BMW</h1>
                                 <p>
-                                    At ARV Tuning, we offer a multitude of services. 
+                                    At ARV Tuning, we have tuned various BMW's and created custom Stage 1 and Stage 2 remaps for these cars. With our remaps, you can be sure that your pops and bangs will be heard and that you can squeeze every ounce of power out of your engine!
                                     <br/>
-                                    One of these include affordable, high vehicle diagnostics primarily for VAGCOM vehicles.
-                                    <br/>
-                                    After having extensive experience in diagnosing and fixing a variety of issues, we can certainly diagnose any issue you have, no matter the complexity.
                                 </p>
                             </div>
                            
@@ -119,13 +116,8 @@ const Work = () =>{
                             </div>
                             <div className={styles.workText} >
                                 <h1 >Audi</h1>
-                           
                                 <p>
-                                    At ARV Tuning, we offer a multitude of services. 
-                                    <br/>
-                                    One of these include affordable, high vehicle diagnostics primarily for VAGCOM vehicles.
-                                    <br/>
-                                    After having extensive experience in diagnosing and fixing a variety of issues, we can certainly diagnose any issue you have, no matter the complexity.
+                                Audi cars, infamous for thier four wheel drive quattro systems. At ARV Tuning we have created custom Stage 1 and Stage 2 remaps for these robust german cars. With our remaps they'll be launching off the line quicker than ever!
                                 </p>
                             </div>
                            
@@ -139,11 +131,7 @@ const Work = () =>{
                             <div className={styles.workText} >
                                 <h1 >VW </h1>
                                 <p>
-                                    At ARV Tuning, we offer a multitude of services. 
-                                    <br/>
-                                    One of these include affordable, high vehicle diagnostics primarily for VAGCOM vehicles.
-                                    <br/>
-                                    After having extensive experience in diagnosing and fixing a variety of issues, we can certainly diagnose any issue you have, no matter the complexity.
+                                  At ARV Tuning we have created  Stage 1 and Stage 2 remaps for the infamous Golf R's, GTI's and GTD's. With our Stage 1 and Stage 2 remaps, you can be sure that you'll give all cars on the road a run for thier money!
                                 </p>
                             </div>
                            
