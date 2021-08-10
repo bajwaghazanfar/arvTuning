@@ -135,6 +135,7 @@ const RemappingPage = () =>{
                                             <option value="defaultValue">Select Stage Type</option>
                                             <option value="Stage 1 + Speed limit remove">Stage 1 + speed limit remove</option>
                                             <option value="Stage 2 + Speed limit remove">Stage 2 + speed limit remove</option>
+                                            <option value="Ecomap">Eco Remap etc.</option>
                                         </select>
                                     </div>
                                     <div className={styles.inputField}>

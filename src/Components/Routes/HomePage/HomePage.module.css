@@ -239,7 +239,6 @@
    display: flex;
    flex-direction: column;
    text-align: center;
-   cursor: pointer;
    position: relative;
     left: -50px;
     opacity: 0;

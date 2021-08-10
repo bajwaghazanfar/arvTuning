@@ -17,7 +17,8 @@ const Footer = () =>{
             </div>
             <div className={styles.rightGrid}>
                <div className={styles.contact}> <MailOutlineIcon/><h2>arvtuningofficial@gmail.com</h2></div>
-               <div className={styles.contact}> <PhoneIcon/><h2>07938372058</h2></div>
+               <div className={styles.contact}> <PhoneIcon/><h2>07938 372058</h2></div>
+               <div className={styles.contact}> <PhoneIcon/><h2>07904 924733</h2></div>
             </div>
         </div>
     )

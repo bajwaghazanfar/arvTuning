@@ -315,7 +315,8 @@
     .imageContainer{
     
         width:100%;
-        height: 90%;
+        height: 80%;
+        margin-top: 30px;
     }
     .imageContainer img{
         width:100%;
