@@ -56,7 +56,7 @@ const FinancePage = () =>{
     const onSumbit = (e) =>{
         e.preventDefault()
 
-        emailjs.sendForm('service_51ty0ft', 'template_livslam', e.target, 'user_RBE4vFmCZAy8E8cqQ1gZ1')
+        emailjs.sendForm('service_eg35c8q', 'template_g2raczf', e.target, 'user_s8506rcfJ1NXwiPZmILT8')
         .then((result) => {
             console.log(result.text);
             setEmailOK(true)
@@ -76,7 +76,7 @@ const FinancePage = () =>{
      <LoadingPage/>
         <div className={styles.container} ref={container}>
              <div className={styles.landingPageWrapper} >
-                <div className={styles.headingWrapper}><h1>Finance a Car</h1></div>
+                <div className={styles.headingWrapper}><h1>Finance your remap</h1></div>
                 <div className={styles.imageContainer}>
                     <img src={audi} ref={image}/>
                     <div className={styles.imageContainerAfter} ref={imageReveal}/>

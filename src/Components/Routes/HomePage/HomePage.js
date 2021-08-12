@@ -70,7 +70,7 @@ const HomePage = () =>{
             <div className={styles.introText} >
                     <div className={styles.introTextWrapper} ref={introText}>
                         <h1 > ARV Tuning</h1>
-                        <h1 >Create the car of your dreams.</h1>
+                        <h1 >Create the car of your dreams</h1>
                     </div>
                 </div>
                 <video src={videoBackground} muted={true} loop={true} autoPlay={true} ref={video}/>

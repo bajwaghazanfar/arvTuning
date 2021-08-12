@@ -54,7 +54,7 @@ const RemappingPage = () =>{
         e.preventDefault()
         console.log(e.target)
 
-        emailjs.sendForm('service_51ty0ft', 'template_byy43lf', e.target, 'user_RBE4vFmCZAy8E8cqQ1gZ1')
+        emailjs.sendForm('service_eg35c8q', 'template_nqkxj0r', e.target, 'user_s8506rcfJ1NXwiPZmILT8')
         .then((result) => {
             console.log(result.text);
             setEmailOK(true)

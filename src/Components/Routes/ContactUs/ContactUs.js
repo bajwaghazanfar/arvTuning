@@ -45,7 +45,6 @@ const ContactUs = () =>{
     const exploreHeader = useRef(null)
     const exploreLinks = useRef(null)
     useEffect(()=>{
-        scroll.scrollToTop()
         gsap.to(container.current,{delay:3,css:{opacity:1}})
         introTextAnimation(introTextWrapper)
         imageRevealAnimation(image,imageReveal)
@@ -57,7 +56,7 @@ const ContactUs = () =>{
     const onSumbit = (e) =>{
         e.preventDefault()
 
-        emailjs.sendForm('service_51ty0ft', 'template_livslam', e.target, 'user_RBE4vFmCZAy8E8cqQ1gZ1')
+        emailjs.sendForm('service_eg35c8q', 'template_8gtvybc', e.target, 'user_s8506rcfJ1NXwiPZmILT8')
         .then((result) => {
             console.log(result.text);
             setEmailOK(true)
@@ -118,7 +117,7 @@ const ContactUs = () =>{
                                         <input autoComplete="none" required="true"name ="EmailAddress" placeholder="Enter Email Address" />
                                     </div>
                                     <div className={styles.inputField}>
-                                        <h1>Phone</h1>
+                                        <h1>Phone Number</h1>
                                         <input autoComplete="none" required="true" name ="Phone" placeholder="Enter Phone Number"/>
                                     </div>
 
