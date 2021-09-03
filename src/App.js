@@ -7,6 +7,7 @@ import Services from "./Components/Routes/Services/Services";
 import FinancePage from "./Components/Routes/Finance/Finance";
 import RemappingPage from "./Components/Routes/Remapping/Remapping";
 import ContactUs from "./Components/Routes/ContactUs/ContactUs";
+import FinanceACarPage from "./Components/Routes/FinanceACar/FinanceACar";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route component={Services} path="/services"/>
       <Route component={FinancePage} path="/finance"/>
       <Route component={RemappingPage} path="/remapping"/>
+      <Route component={FinanceACarPage} path="/finance-a-car"/>
       <Route component={ContactUs} path="/contactUs"/>
     </Switch>
 </>

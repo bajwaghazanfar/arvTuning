@@ -10,6 +10,8 @@ import {Button} from '@material-ui/core'
 import Footer from '../../Footer/Footer';
 import { useHistory,Redirect } from 'react-router-dom';
 import * as Scroll from 'react-scroll';
+import poster from './assets/poster.jpg'
+import { Helmet } from 'react-helmet';
 
 const HomePage = () =>{
      //React Scroll
@@ -65,6 +67,11 @@ const HomePage = () =>{
     return(
     <>
       <LoadingPage/>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>ARV TUNING|HOME</title>
+                <meta name="description" content="ARV TUNING |Financing|Remapping|. We offer various services for various cars at affordable prices." />
+        </Helmet>
         <div className={styles.container} ref={container}>
             <div className={styles.videoBackgroundWrapper}>
             <div className={styles.introText} >
@@ -73,7 +80,9 @@ const HomePage = () =>{
                         <h1 >Create the car of your dreams</h1>
                     </div>
                 </div>
-                <video src={videoBackground} muted={true} loop={true} autoPlay={true} ref={video}/>
+                <video muted={true} loop={true} autoPlay={true} ref={video} poster={poster}>
+                    <source src={videoBackground} type="video/mp4"/>
+                </video>
                 <div className={styles.overlay}></div>
             </div>
             

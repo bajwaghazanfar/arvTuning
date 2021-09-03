@@ -13,6 +13,7 @@ import { Button } from '@material-ui/core'
 import Footer from '../../Footer/Footer'
 import { useHistory } from 'react-router'
 import * as Scroll from 'react-scroll';
+import { Helmet } from 'react-helmet'
 
 const Work = () =>{
     //React Scroll
@@ -74,6 +75,11 @@ const Work = () =>{
     return(
     <>
      <LoadingPage/>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ARV TUNING|WORK</title>
+                <meta name="description" content="At ARV TUNING we have an extensive background on a wide variety of performance cars. Ranging from Golf R's to BMW's" />
+            </Helmet>
         <div className={styles.container} ref={container}>
             <div className={styles.landingPageWrapper} >
                 <div className={styles.headingWrapper}><h1>Our Work</h1></div>

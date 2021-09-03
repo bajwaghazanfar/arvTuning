@@ -12,6 +12,9 @@ import gsap from 'gsap/gsap-core'
 import mobileRemapping from './assets/mobileRemapping.jpg'
 import { useHistory } from 'react-router'
 import * as Scroll from 'react-scroll';
+import dodge from './assets/dodge.jpg'
+import { Helmet } from 'react-helmet'
+
 const Services = () =>{
     //History instance
     let history = useHistory()
@@ -60,6 +63,11 @@ const Services = () =>{
     return(
     <>
      <LoadingPage/>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>ARV TUNING | Services</title>
+                <meta name="description" content="At ARV TUNING we offer various services for various cars. |Financing|Remapping|" />
+        </Helmet>
         <div className={styles.container} ref={container}>
            <div className={styles.landingPageWrapper} >
                 <div className={styles.headingWrapper}><h1>Our Services</h1></div>
@@ -87,8 +95,8 @@ const Services = () =>{
                               <img src={finance}  ref={ serviceimage1}/>
                               <div className={styles.imageOverlay} ref={imageOverlay} onMouseEnter={()=>{onHoverImageOverlay(serviceimage1)}} onMouseLeave={()=>{onHoverImageOverlayLeave(serviceimage1)}}>
                                     <div className={styles.serviceText}>
-                                      <h1>Finance</h1>
-                                      <h3>Learn more about our finance plans</h3>
+                                      <h1>Finance your remap</h1>
+                                      <h3>Learn more about our financing plans for your remaps</h3>
                                     </div>
                                 </div>
                             </div> 
@@ -108,14 +116,15 @@ const Services = () =>{
                         </div>
                     </a>
 
-                    <a href="/remapping">
+
+                    <a href="/finance-a-car">
                         <div className={styles.services} ref={service3}>
                             <div className={styles.servicesImageContainer} >
-                              <img src={mobileRemapping}  ref={ serviceimage4}/>
+                              <img src={dodge}  ref={ serviceimage3}/>
                               <div className={styles.imageOverlay} onMouseEnter={()=>{onHoverImageOverlay(serviceimage4)}} onMouseLeave={()=>{onHoverImageOverlayLeave(serviceimage4)}}>
                                     <div className={styles.serviceText}>
-                                      <h1>Mobile Remapping</h1>
-                                      <h3>Check out our mobile remapping services</h3>
+                                      <h1>Finance A Car</h1>
+                                      <h3>Finance one of our cars today!</h3>
                                     </div>
                                 </div>
                             </div> 

@@ -11,7 +11,7 @@ import Footer from '../../Footer/Footer'
 import emailjs from 'emailjs-com';
 import { useHistory } from 'react-router'
 import * as Scroll from 'react-scroll';
-
+import {Helmet} from "react-helmet";
 const FinancePage = () =>{
     //React Scroll
     let scroll    = Scroll.animateScroll;
@@ -74,6 +74,11 @@ const FinancePage = () =>{
     return(
     <>
      <LoadingPage/>
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>ARV TUNING|Finance Your Remap</title>
+                <meta name="description" content="Finance your remap. We offer various plans for various cars and for a reasonable price" />
+        </Helmet>
         <div className={styles.container} ref={container}>
              <div className={styles.landingPageWrapper} >
                 <div className={styles.headingWrapper}><h1>Finance your remap</h1></div>
@@ -156,18 +161,19 @@ const FinancePage = () =>{
                           <a href="/services">  <Button ><h2>Our Services</h2></Button></a>
                         </div>
 
-                        <div className={styles.link}>
-                          <a href="/work">  <Button ><h2>Our Work</h2></Button></a>
-                        </div>
-
 
                         <div className={styles.link}>
                           <a href="/remapping">  <Button ><h2>Remapping</h2></Button></a>
                         </div>
 
                         <div className={styles.link}>
+                          <a href="/finance-a-car">  <Button ><h2>Finance a car</h2></Button></a>
+                        </div>
+
+                        <div className={styles.link}>
                           <a href="/contactUs">  <Button ><h2>Contact Us</h2></Button></a>
                         </div>
+                        
                     </div>
                 </div>
             </div>

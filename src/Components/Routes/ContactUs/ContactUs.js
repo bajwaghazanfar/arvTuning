@@ -11,6 +11,7 @@ import Footer from '../../Footer/Footer'
 import emailjs from 'emailjs-com';
 import { useHistory } from 'react-router'
 import * as Scroll from 'react-scroll';
+import { Helmet } from 'react-helmet'
 
 const ContactUs = () =>{
     //React Scroll
@@ -74,6 +75,11 @@ const ContactUs = () =>{
     return(
     <>
      <LoadingPage/>
+     <Helmet>
+                <meta charSet="utf-8" />
+                <title>ARV TUNING|Contact Us</title>
+                <meta name="description" content="Have an enquiry? Contact us now and create the car of your dreams." />
+        </Helmet>
         <div className={styles.container} ref={container}>
              <div className={styles.landingPageWrapper} >
                 <div className={styles.headingWrapper}><h1>Contact Us.</h1></div>
@@ -152,10 +158,13 @@ const ContactUs = () =>{
                           <a href="/work">  <Button ><h2>Our Work</h2></Button></a>
                         </div>
 
-
                         <div className={styles.link}>
                           <a href="/remapping">  <Button ><h2>Remapping</h2></Button></a>
                         </div>
+                        <div className={styles.link}>
+                          <a href="/finance-a-car">  <Button ><h2>Finance a car</h2></Button></a>
+                        </div>
+
                     </div>
                 </div>
             </div>
